@@ -1,0 +1,20 @@
+extends layouts/default
+include helpers/_mixins-default
+include helpers/_mixins-custom
+
+block variables
+  - const title = "Invest Heroes Global"
+
+block content
+  include ../blocks/modules/header/header.pug
+  main.main
+    include ../blocks/modules/main-top/main-top.pug
+    include ../blocks/modules/with/with.pug
+    include ../blocks/modules/how/how.pug
+    include ../blocks/modules/investment/investment.pug
+    include ../blocks/modules/about/about.pug
+  include ../blocks/modules/popup/popup.pug 
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")

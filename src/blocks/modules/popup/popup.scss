@@ -1,0 +1,65 @@
+.popup {
+    display: none;
+    background: #fff;  
+    padding: 58px 28px 38px;
+    @media screen and (max-width: 767px) {
+        padding: 18px 31px 34px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        min-width: 336px;
+        margin-right: 40px;
+
+        @media screen and (max-width: 767px) {
+            min-width: 0;
+            margin-right: 0;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__info {
+        max-width: 420px;
+    }
+
+    &__title {
+        max-width: 415px;
+        font-size: 45px;
+        line-height: 100%;
+        font-weight: 900;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 32px;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 23px;
+        line-height: 100%;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            margin-bottom: 19px;
+        }
+    }
+
+    &__btn {
+        max-width: fit-content;
+        font-size: 20px;
+        padding: 15px 52px;
+
+        @media screen and (max-width: 767px) {
+            padding: 15px 44px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+include how-data.pug
+
+section.how
+    .how__back.how__back--big
+    .how__back.how__back--medium
+    .how__back.how__back--small
+    .l-default
+        h2.how__title.title.title--h2 How our system works
+        .how__items
+            each how_item in how_items
+                .how__item
+                    .how__item-icon
+                        img(src="img/svg/how/" + how_item.icon + ".svg", alt="")
+                    .how__item-info
+                        .how__item-title= how_item.title
+                        .how__item-text= how_item.text
+        form.form
+            .form__wrapper
+                input.form__input(type="email" name="email" placeholder="Enter your email address")
+                button.btn.btn--circle(type="submit")
+                    .btn__icon  
+                        img(src="img/svg/user.svg", alt="")

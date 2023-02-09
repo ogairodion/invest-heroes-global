@@ -1,0 +1,14 @@
+include investment-data.pug
+
+section.investment
+    .l-default
+        h2.investment__title.title.title--h2.gradient--text Our investment
+        .investment__subtitle.gradient--text philosophy
+        .investment__items
+            each investment_item in investment_items 
+                .investment__item
+                    .investment__item-top
+                        .investment__item-number= investment_item.number
+                        .investment__item-title= investment_item.title
+                    .investment__item-icon  
+                        img(src="img/svg/investment/" + investment_item.icon + ".svg", alt="")

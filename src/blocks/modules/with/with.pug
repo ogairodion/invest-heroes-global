@@ -1,0 +1,17 @@
+include with-data.pug
+
+section.with
+    .l-default 
+        h2.with__title.title.title--h2.gradient--text With Invest Heroes
+        .with__subtitle.gradient--text You can save your time and increase your capital and increase your net worth
+        .with__text Our clients can build a perspective portfolio with our portal and track every change in asset managers’ actions, macro trends or fundamental value of assets.
+        .with__items
+            each with_item, index in with_items
+                .with__item
+                    .with__item-wrapper
+                        .with__item-icon
+                            img(src="img/svg/with/"+ with_item.img +".svg", alt="")
+                        .with__item-text= with_item.text
+                - if (index == 1)
+                    .with__img 
+                        +webp(['with/1'], 'png')

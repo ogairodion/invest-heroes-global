@@ -1,0 +1,26 @@
+header.header
+    .l-content
+        .header__wrapper
+            .header__logo 
+                +svgColor('logo')
+            .header__content
+                .header__menu
+                    a.header__menu-item(href="") Deep view
+                    a.header__menu-item(href="") Products
+                    a.header__menu-item(href="") About
+                    a.header__menu-item(href="") Contact
+                    .header__menu-item.header__menu-item--trigger More
+                        .header__menu-submenu
+                            a.header__menu-submenu--item(href="") Name menu
+                            a.header__menu-submenu--item(href="") Name menu
+                a.header__btn.btn.btn--blue(href="") 
+                    .btn__icon
+                        img(src="img/svg/user.svg", alt="")
+                    .btn__text Subscribe
+                a.header__login(href="") Login
+            .header__burger 
+                span 
+                span 
+                span 
+            .header__mobile
+                .header__mobile-top
